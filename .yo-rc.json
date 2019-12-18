@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "cn.js.today"
+    },
+    "jhipsterVersion": "6.5.1",
+    "applicationType": "microservice",
+    "baseName": "logsCollection",
+    "packageName": "cn.js.today",
+    "packageFolder": "cn/js/today",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2FkNTk1OTY2NmQzZDA0MDRlNTg1OGNlNDAxZGE0NTBlMmY3MmU0MThiMzc1YWI3MDcyMTRlNzNiMGM3ODY1NzA1YTgyMjZkNDY2ZmE0ZjdmMTIwN2U4NTk3MTg1ZDFmNDY3Yjg0ZGEzM2FkYTcyNzNjYzJiMjdiMzg5MjhmMWY=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
