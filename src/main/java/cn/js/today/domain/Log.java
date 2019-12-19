@@ -42,6 +42,180 @@ public class Log {
     private String createByName;		// 创建者名称
     private Date createDate;		// 创建时间
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public String getLogType() {
+        return logType;
+    }
+
+    public void setLogType(String logType) {
+        this.logType = logType;
+    }
+
+    public String getLogTitle() {
+        return logTitle;
+    }
+
+    public void setLogTitle(String logTitle) {
+        this.logTitle = logTitle;
+    }
+
+    public String getRequestUri() {
+        return requestUri;
+    }
+
+    public void setRequestUri(String requestUri) {
+        this.requestUri = requestUri;
+    }
+
+    public String getRequestMethod() {
+        return requestMethod;
+    }
+
+    public void setRequestMethod(String requestMethod) {
+        this.requestMethod = requestMethod;
+    }
+
+    public String getRequestParams() {
+        return requestParams;
+    }
+
+    public void setRequestParams(String requestParams) {
+        this.requestParams = requestParams;
+    }
+
+    public String getBizKey() {
+        return bizKey;
+    }
+
+    public void setBizKey(String bizKey) {
+        this.bizKey = bizKey;
+    }
+
+    public String getBizType() {
+        return bizType;
+    }
+
+    public void setBizType(String bizType) {
+        this.bizType = bizType;
+    }
+
+    public String getRemoteAddr() {
+        return remoteAddr;
+    }
+
+    public void setRemoteAddr(String remoteAddr) {
+        this.remoteAddr = remoteAddr;
+    }
+
+    public String getServerAddr() {
+        return serverAddr;
+    }
+
+    public void setServerAddr(String serverAddr) {
+        this.serverAddr = serverAddr;
+    }
+
+    public String getIsException() {
+        return isException;
+    }
+
+    public void setIsException(String isException) {
+        this.isException = isException;
+    }
+
+    public String getExceptionInfo() {
+        return exceptionInfo;
+    }
+
+    public void setExceptionInfo(String exceptionInfo) {
+        this.exceptionInfo = exceptionInfo;
+    }
+
+    public String getUserAgent() {
+        return userAgent;
+    }
+
+    public void setUserAgent(String userAgent) {
+        this.userAgent = userAgent;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    public String getBrowserName() {
+        return browserName;
+    }
+
+    public void setBrowserName(String browserName) {
+        this.browserName = browserName;
+    }
+
+    public Long getExecuteTime() {
+        return executeTime;
+    }
+
+    public void setExecuteTime(Long executeTime) {
+        this.executeTime = executeTime;
+    }
+
+    public String getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy;
+    }
+
+    public String getCreateByName() {
+        return createByName;
+    }
+
+    public void setCreateByName(String createByName) {
+        this.createByName = createByName;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Log{" +
+            "id=" + id +
+            ", logType='" + logType + '\'' +
+            ", logTitle='" + logTitle + '\'' +
+            ", requestUri='" + requestUri + '\'' +
+            ", requestMethod='" + requestMethod + '\'' +
+            ", requestParams='" + requestParams + '\'' +
+            ", bizKey='" + bizKey + '\'' +
+            ", bizType='" + bizType + '\'' +
+            ", remoteAddr='" + remoteAddr + '\'' +
+            ", serverAddr='" + serverAddr + '\'' +
+            ", isException='" + isException + '\'' +
+            ", exceptionInfo='" + exceptionInfo + '\'' +
+            ", userAgent='" + userAgent + '\'' +
+            ", deviceName='" + deviceName + '\'' +
+            ", browserName='" + browserName + '\'' +
+            ", executeTime=" + executeTime +
+            ", createBy='" + createBy + '\'' +
+            ", createByName='" + createByName + '\'' +
+            ", createDate=" + createDate +
+            '}';
+    }
 }

@@ -28,9 +28,12 @@ public class logsResource {
 
     @PostMapping("/logs")
     @ResponseBody
-    public ResponseEntity<ResponseBean> createLogs(@RequestBody Log log) throws URISyntaxException {
-        logger.debug("REST request to save Log : {}", log);
-        return new ResponseEntity<ResponseBean>(HttpStatus.OK);
+    public ResponseEntity<ResponseBean> createLogs(@RequestBody Log log) {
+        logger.info("REST request to save Log : {}", log);
+        ResponseBean responseBean = new ResponseBean();
+        responseBean.setCode("0000");
+        responseBean.setMsg("success");
+        return new ResponseEntity<ResponseBean>(responseBean, HttpStatus.OK);
 
     }
 
