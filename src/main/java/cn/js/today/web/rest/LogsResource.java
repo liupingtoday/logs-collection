@@ -1,13 +1,12 @@
 package cn.js.today.web.rest;
 
 import cn.js.today.domain.Log;
+import cn.js.today.domain.MobileLog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.net.URISyntaxException;
 
 /**
  * Simple to Introduction
@@ -22,9 +21,9 @@ import java.net.URISyntaxException;
  */
 @RestController
 @RequestMapping("/api")
-public class logsResource {
+public class LogsResource {
 
-    private final Logger logger = LoggerFactory.getLogger(logsResource.class);
+    private final Logger logger = LoggerFactory.getLogger(LogsResource.class);
 
     @PostMapping("/logs")
     @ResponseBody
@@ -37,5 +36,15 @@ public class logsResource {
 
     }
 
+    @PostMapping("/logs/mobileLog")
+    @ResponseBody
+    public ResponseEntity<ResponseBean> createMobileLogs(@RequestBody MobileLog mobileLog) {
+        logger.info("REST request to save Log : {}", mobileLog);
+        ResponseBean responseBean = new ResponseBean();
+        responseBean.setCode("0000");
+        responseBean.setMsg("success");
+        return new ResponseEntity<ResponseBean>(responseBean, HttpStatus.OK);
+
+    }
 
 }
